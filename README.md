@@ -1,6 +1,6 @@
 <p align="center"><img src="http://hprose.com/banner.@2x.png" alt="Hprose" title="Hprose" width="650" height="200" /></p>
 
-# [Hprose-gateway-etcd](https://github.com/vlorc/hprose-gateway-consul)
+# [Hprose-gateway-consul](https://github.com/vlorc/hprose-gateway-consul)
 [简体中文](https://github.com/vlorc/hprose-gateway-consul/blob/master/README_CN.md)
 
 [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -26,7 +26,7 @@ Hprose gateway consul service discovery based on golang
 ```golang
 r := resolver.NewResolver(cli, ctx, "")
 // print event 
-go r.Watch("test" /*service name*/, watcher.NewPrintWatcher(fmt.Printf))
+go r.Watch("user" /*service name*/, watcher.NewPrintWatcher(fmt.Printf))
 ```
 
 * Service register
